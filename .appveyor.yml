@@ -1,0 +1,14 @@
+image: Visual Studio 2017
+
+environment:
+  nodejs_version: "Current"
+
+install:
+  - ps: choco install bower -y
+
+test_script:
+  - node --version
+  - npm --version
+  - bower --version
+
+build: off
